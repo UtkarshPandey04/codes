@@ -8,7 +8,7 @@ public:
         for(int x=0;x<nums.size();x++){
             bool ok=true;
             for(int i=0;i<nums.size();i++){
-                if(arr[i]!=nums[(i+x)%nums.size()]){
+                if(nums[i]!=arr[(i+x)%arr.size()]){
                     ok=false;
                     break;
                 }
